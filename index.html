@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus.lol</title>
+    <link rel="icon" type="image/png" href="https://github.com/Marcus-lol/Main/blob/main/Images/icon.png?raw=true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: transparent;
+        }
+        .profile {
+            text-align: center;
+            padding: 20px;
+        }
+        .profile img {
+            width: 200px; /* Adjusted width for the profile picture */
+            height: auto; /* Auto height to maintain aspect ratio */
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            margin-bottom: 20px;
+        }
+        .profile h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .profile p {
+            font-size: 18px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+        .social-links {
+            text-align: center; /* Center align social links */
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #007bff;
+        }
+        .store {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center; /* Center align store text */
+        }
+        .store h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .store-section {
+            margin-bottom: 20px;
+            text-align: left; /* Align store section text to left */
+        }
+        .store-section h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ffb400;
+        }
+        .store-section p {
+            font-size: 18px;
+            margin: 5px 0;
+            text-indent: 0; /* Reset text indent */
+        }
+        .store-section strong {
+            color: #ffb400;
+        }
+        .rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .rain-line {
+            position: absolute;
+            width: 2px;
+            height: 100px;
+            background-color: #007bff;
+            animation: rain 1s linear infinite;
+        }
+        @keyframes rain {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(110vh);
+                opacity: 1;
+            }
+        }
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: opacity 0.5s ease;
+        }
+        #overlay-content {
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+            opacity: 0.8;
+            padding: 20px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.3s ease;
+        }
+        #overlay-content:hover {
+            opacity: 1;
+        }
+        #overlay-content button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #overlay-content button:hover {
+            background-color: #0056b3;
+        }
+               .warning {
+            text-align: center;
+            color: #ff0000;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="profile-container" style="display: none;">
+        <div class="profile">
+            <img src="https://github.com/Marcus-lol/Main/blob/main/Images/aapeargod.png?raw=true" alt="Profile Picture">
+            <h1>Appeargod</h1>
+            <p>
+               The Best Seller Out There.
+            </p>
+            <p>You can DM me if I don't respond; I might be busy or sleeping. <br>
+            <a href="https://www.youtube.com/watch?v=ljaiLU3G964" target="_blank">https://www.youtube.com/watch?v=ljaiLU3G964</a> <br>
+            If you need to talk to me, DM me on Telegram.</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://t.me/yetvald" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.instagram.com/yuvaldinodia0/?igsh=NXptZ2NjMno4ODRs&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.snapchat.com/add/yetval1?share_id=Usp9JTrHTM67O5HPWHSgEw&locale=en_US" target="_blank"><i class="fab fa-snapchat"></i></a>
+        </div>
+
+        <div class="store">
+            <h2>Store</h2>
+            
+            <div class="store-section">
+                <h3>INSTAGRAM :)</h3>
+                <p><strong>FOLLOWERS:</strong> Per 1k (ALL NEW SERVER)</p>
+                <p>Medium Includes a 30 Day Refill - $2</p>
+                <p>🔥 UHQ/HQ Includes a 365 day refill (1 Year +) - $3 🔥</p>
+                <p>Bulk Order (20k and Above) - Will be cheaper</p>
+                <p>High Quality/UHQ is recommended as the quality doesn’t drop as fast. Please note I do send extra to avoid drops.</p>
+            </div>
+            
+            <div class="store-section">
+                <h3>LIKES</h3>
+                <p>- 500 likes - $1</p>
+                <p>- 1k likes - $1.50</p>
+                <p>- 5k likes - $5</p>
+                <p>- 10k likes - $8</p>
+                <p>(Higher quantities can be discussed)</p>
+            </div>
+            
+            <div class="store-section">
+                <h3>VIDEO VIEWS</h3>
+                <p>- 1k views - $1</p>
+                <p>- 5k views - $3.50</p>
+                <p>- 10k views - $6.50</p>
+                <p>(Higher quantities can be discussed)</p>
+            </div>
+            
+            <div class="store-section">
+                <h3>STREAMS/VIEWS</h3>
+                <p>- 500 streams/views - $1</p>
+                <p>- 1k streams/views - $2</p>
+                <p>- 5k streams/views - $5</p>
+                <p>- 10k streams/views - $8</p>
+                <p>(Higher quantities can be discussed)</p>
+            </div>
+            
+            <div class="store-section">
+                <h3>INSTAGRAM SERVICES</h3>
+                <p>- Profile Optimization</p>
+                <p>- Post Scheduling</p>
+                <p>- Engagement Groups</p>
+                <p>- Hashtag Research</p>
+            </div>
+            
+            <div class="store-section">
+                <h3>STORY VIEWS</h3>
+                <p>- 500 views - $0.25</p>
+                <p>- 1k views - $0.50</p>
+                <p>- 5k views - $2</p>
+                <p>- 10k views - $2.50</p>
+                <p>(Higher quantities can be discussed)</p>
+            </div>
+
+            <div class="store-section">
+                <h3>TikTok</h3>
+                <p><strong>FOLLOWS</strong></p>
+                <p>Medium - $6</p>
+                <p>UHQ Real - $10</p>
+                <p>Bulk Orders Can Be Discussed</p>
+                <p><strong>Likes</strong></p>
+                <p>Medium - $2 Per 1k</p>
+                <p>UHQ Real Likes - $8 Per 1k</p>
+                <p><strong>Views</strong></p>
+                <p>1000 - $0.01</p>
+            </div>
+            
+            <div class="store-section">
+                <h3>ACCOUNT SERVICES</h3>
+                
+                <div>
+                    <h4>Spotify (Private Accounts)</h4>
+                    <p>1M - $6</p>
+                    <p>3M - $10</p>
+                    <p>6M - $18</p>
+                    <p>12M - $30</p>
+                </div>
+                
+                <div>
+                    <h4>Prime Video (Private Accounts)</h4>
+                    <p>1M - $5</p>
+                    <p>6M - $15</p>
+                    <p>12M - $28</p>
+                </div>
+                
+                <div>
+                    <h4>YouTube Premium</h4>
+                    <p>1M - $5</p>
+                    <p>6M - $25</p>
+                    <p>12M - $40</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" onclick="revealProfile()">
+        <div id="overlay-content">
+            <p>CLICK</p>
+            <div class="warning">*MUSIC WILL BE PLAYED*</div>
+        </div>
+    </div>
+
+    <div class="rain"></div>
+
+    <audio id="background-music" src="aapear.mp3" loop></audio>
+    <script>
+        function revealProfile() {
+            document.getElementById('profile-container').style.display = 'block';
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('background-music').play();
+        }
+
+        function createRain() {
+            const rainContainer = document.createElement('div');
+            rainContainer.className = 'rain';
+            document.body.appendChild(rainContainer);
+
+            for (let i = 0; i < 100; i++) {
+                const rainLine = document.createElement('div');
+                rainLine.className = 'rain-line';
+                rainLine.style.left = `${Math.random() * 100}%`;
+                rainLine.style.animationDuration = `${Math.random() * 1 + 0.5}s`;
+                rainContainer.appendChild(rainLine);
+            }
+        }
+
+        createRain();
+    </script>
+</body>
+</html>
